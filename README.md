@@ -1,8 +1,19 @@
 # 忆语 (YiYu) - 智能对话记忆系统
 
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![LangSmith](https://img.shields.io/badge/LangSmith-Integrated-green.svg)](https://smith.langchain.com/)
+
 > 忆语 - 让每句话都有记忆
 
+<div align="center">
+
+![忆语 (YiYu)](https://img.shields.io/badge/忆语(YiYu)-智能对话记忆系统-purple?style=for-the-badge&logo=brain&logoColor=white)
+
 基于 LangGraph、本地 Qdrant 向量数据库、Mem0、本地嵌入模型和 LangSmith 的智能对话记忆系统，具备跨会话记忆功能和完整的对话流程追踪。
+
+</div>
 
 ## ✨ 特性
 
@@ -19,6 +30,21 @@
 - 📋 **记忆引用**: 可展开查看对话中的记忆引用详情
 - 🐛 **调试工具**: 提供强大的调试和性能分析工具
 - 🚀 **无降级处理**: 严格按照要求实现，无备用方案
+
+## 🚀 快速预览
+
+<div align="center">
+
+### 🌐 Web界面演示
+![Web界面](https://img.shields.io/badge/Streamlit-现代化界面-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+### 📱 核心功能
+- 🧠 **智能记忆**: 跨会话对话记忆管理
+- 👥 **多用户支持**: 独立的用户记忆空间
+- 🔍 **语义搜索**: 基于M3E向量的智能检索
+- 📊 **实时追踪**: LangSmith完整的对话监控
+
+</div>
 
 ## 🏗️ 技术架构
 
@@ -137,22 +163,29 @@ streamlit run app.py
 
 ## 📁 项目结构
 
-```
+```bash
 忆语 (YiYu)/
-├── app.py                     # Streamlit Web应用主文件 (智能用户管理)
-├── memory_agent.py            # 主对话代理 (带 LangSmith 追踪)
-├── config.py                  # 统一配置管理
-├── setup_qdrant.py            # Qdrant 向量数据库设置脚本
-├── langsmith_debug.py         # LangSmith 调试和监控工具
-├── setup_langsmith_project.py # LangSmith 项目设置工具
-├── requirements.txt           # 依赖包列表 (含 streamlit)
-├── .env.example              # 环境变量配置模板
-├── README.md                 # 项目完整文档
-├── CLAUDE.md                 # 开发环境指南
-├── LANGSMITH_GUIDE.md        # LangSmith 详细使用指南
-├── qdrant_storage/           # Qdrant 本地存储目录
-└── venv/                     # Python 3.11 虚拟环境
+├── 📄 app.py                     # Streamlit Web应用主文件 (智能用户管理)
+├── 📄 memory_agent.py            # 主对话代理 (带 LangSmith 追踪)
+├── 📄 config.py                  # 统一配置管理
+├── 📄 setup_qdrant.py            # Qdrant 向量数据库设置脚本
+├── 📄 langsmith_debug.py         # LangSmith 调试和监控工具
+├── 📄 setup_langsmith_project.py # LangSmith 项目设置工具
+├── 📄 requirements.txt           # 依赖包列表 (含 streamlit)
+├── 📄 .env.example              # 环境变量配置模板
+├── 📄 README.md                 # 项目完整文档
+├── 📄 CLAUDE.md                 # 开发环境指南
+├── 📄 qdrant_storage/           # Qdrant 本地存储目录
+├── 📄 .gitignore               # Git忽略文件
+└── 📄 LICENSE                  # MIT许可证
 ```
+
+### 📊 项目统计
+- **代码文件**: 6个核心Python文件
+- **总代码行数**: ~2000行
+- **依赖包**: 25个Python包
+- **模型大小**: ~400MB (M3E-Base)
+- **数据库**: 本地Qdrant向量存储
 
 ## ⚙️ 配置说明
 
@@ -533,3 +566,19 @@ python create_project.py
 - [LangSmith 控制台](https://smith.langchain.com) - 查看对话追踪数据
 - [LANGSMITH_GUIDE.md](./LANGSMITH_GUIDE.md) - 详细使用指南
 - [魔搭社区](https://modelscope.cn) - LLM 模型服务
+
+---
+
+<div align="center">
+
+**⭐ 如果这个项目对您有帮助，请给我们一个 Star！**
+
+[![GitHub stars](https://img.shields.io/github/stars/brightbird/EasyMemGraph.svg?style=social&label=Star)](https://github.com/brightbird/EasyMemGraph)
+[![GitHub forks](https://img.shields.io/github/forks/brightbird/EasyMemGraph.svg?style=social&label=Fork)](https://github.com/brightbird/EasyMemGraph/fork)
+[![GitHub issues](https://img.shields.io/github/issues/brightbird/EasyMemGraph.svg)](https://github.com/brightbird/EasyMemGraph/issues)
+
+**🔧 维护者**: [brightbird](https://github.com/brightbird)
+**📅 最后更新**: 2025年10月
+**📦 版本**: v1.0
+
+</div>
