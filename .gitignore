@@ -1,0 +1,83 @@
+# 环境变量文件
+.env
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE 相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 数据库存储
+qdrant_storage/
+
+# 模型缓存
+.cache/
+models/
+transformers_cache/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 备份文件
+*.bak
+*.backup
+
+# 测试覆盖率
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 文档构建
+docs/_build/
+
+# 配置文件中的敏感信息占位符
+# 确保 .env.example 被包含，但 .env 被忽略
