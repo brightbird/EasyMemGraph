@@ -731,7 +731,6 @@ def render_sidebar():
                         with col3:
                             if stats['last_activity']:
                                 try:
-                                    from datetime import datetime
                                     if isinstance(stats['last_activity'], str):
                                         last_dt = datetime.fromisoformat(stats['last_activity'].replace('Z', '+00:00'))
                                     else:
